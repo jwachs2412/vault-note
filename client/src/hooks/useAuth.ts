@@ -1,0 +1,13 @@
+import { useContext, createContext } from 'react';
+import type { AuthContextType } from '../context/AuthContext';
+
+export const AuthContext = createContext<AuthContextType | null>(null);
+
+// Custom hook for consuming auth context
+export function useAuth() {
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+  return context;
+}

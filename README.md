@@ -52,6 +52,9 @@ cd server && npm run dev
 cd client && npm run dev
 ```
 
+- Frontend: https://vault-note-pi.vercel.app/
+- Backend: https://vault-note-api.onrender.com
+
 ## API Endpoints
 
 | Method | Endpoint           | Auth  | Description       |
@@ -66,3 +69,14 @@ cd client && npm run dev
 | DELETE | /api/notes/:id     | Yes   | Delete a note     |
 | GET    | /api/admin/stats   | Admin | Usage statistics  |
 | GET    | /api/health        | No    | Health check      |
+
+## What I Learned
+
+This project demonstrates understanding of:
+
+- Authentication system design
+- Security awareness
+- Middleware architecture
+- Protected API design
+- Client-side routing
+- Secrets management
